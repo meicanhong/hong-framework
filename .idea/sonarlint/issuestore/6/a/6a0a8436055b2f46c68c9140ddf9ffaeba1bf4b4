@@ -1,0 +1,9 @@
+
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(†®Üşøÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(«“úßşÿÿÿÿ
+M	java:S106I"9Replace this use of System.out or System.err by a logger.(ñÂ
+S	java:S106^"9Replace this use of System.out or System.err by a logger.(Şàš¬øÿÿÿÿ
+C
+java:S1604h"(Make this anonymous inner class a lambda( ãÿ’øÿÿÿÿ
+Y
+java:S22594"CA "NullPointerException" could be thrown; "clazz" is nullable here.(À¿ŸÂ

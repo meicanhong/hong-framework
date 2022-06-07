@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <bean class="hongframework.test.event.ContextRefreshedEventListener"/>
+
+    <bean class="hongframework.test.event.CustomEventListener"/>
+
+    <bean class="hongframework.test.event.ContextClosedEventListener"/>
+
+</beans>
