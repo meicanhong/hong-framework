@@ -1,7 +1,7 @@
 package hongframework.context.support;
 
-import hongframework.bean.BeanException;
-import hongframework.bean.factory.config.BeanPostProcessor;
+import hongframework.beans.BeanException;
+import hongframework.beans.factory.config.BeanPostProcessor;
 import hongframework.context.ApplicationContext;
 import hongframework.context.ApplicationContextAware;
 

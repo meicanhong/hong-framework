@@ -1,6 +1,6 @@
 package hongframework.context.support;
 
-import hongframework.bean.BeanException;
+import hongframework.beans.BeanException;
 
 /**
  * @Author: canhong

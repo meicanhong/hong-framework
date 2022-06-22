@@ -1,7 +1,7 @@
 package hongframework.context.support;
 
-import hongframework.bean.factory.support.DefaultListableBeanFactory;
-import hongframework.bean.factory.xml.XmlBeanDefinitionReader;
+import hongframework.beans.factory.support.DefaultListableBeanFactory;
+import hongframework.beans.factory.xml.XmlBeanDefinitionReader;
 
 /**
  * @Author: canhong

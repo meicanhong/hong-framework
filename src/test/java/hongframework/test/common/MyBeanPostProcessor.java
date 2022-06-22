@@ -1,7 +1,7 @@
 package hongframework.test.common;
 
-import hongframework.bean.BeanException;
-import hongframework.bean.factory.config.BeanPostProcessor;
+import hongframework.beans.BeanException;
+import hongframework.beans.factory.config.BeanPostProcessor;
 import hongframework.test.bean.UserService;
 
 /**
@@ -14,7 +14,7 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeanException {
         if ("userService".equals(beanName)) {
             UserService userService = (UserService) bean;
-            userService.setLocation("改为：北京");
+            userService.register("改为：北京");
         }
         return bean;
     }

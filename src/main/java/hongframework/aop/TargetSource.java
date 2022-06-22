@@ -1,5 +1,7 @@
 package hongframework.aop;
 
+import hongframework.util.ClassUtils;
+
 /**
  * @Author: canhong
  * @Date: 2022/6/8 20:12
@@ -20,7 +22,9 @@ public class TargetSource {
      * @return the type of targets returned by this {@link TargetSource}
      */
     public Class<?>[] getTargetClass(){
-        return this.target.getClass().getInterfaces();
+        Class<?> clazz = this.target.getClass();
+        clazz = ClassUtils.isCglibProxyClass(clazz) ? clazz.getSuperclass() : clazz;
+        return clazz.getInterfaces();
     }
 
     /**

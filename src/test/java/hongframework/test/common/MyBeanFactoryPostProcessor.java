@@ -1,11 +1,11 @@
 package hongframework.test.common;
 
-import hongframework.bean.BeanException;
-import hongframework.bean.factory.ConfigurableListableBeanFactory;
-import hongframework.bean.factory.config.BeanDefinition;
-import hongframework.bean.factory.config.BeanFactoryPostProcessor;
-import hongframework.bean.factory.config.PropertyValue;
-import hongframework.bean.factory.config.PropertyValues;
+import hongframework.beans.BeanException;
+import hongframework.beans.factory.ConfigurableListableBeanFactory;
+import hongframework.beans.factory.config.BeanDefinition;
+import hongframework.beans.factory.config.BeanFactoryPostProcessor;
+import hongframework.beans.factory.config.PropertyValue;
+import hongframework.beans.factory.config.PropertyValues;
 
 /**
  * @Author: canhong

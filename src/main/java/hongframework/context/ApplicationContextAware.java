@@ -1,7 +1,7 @@
 package hongframework.context;
 
-import hongframework.bean.BeanException;
-import hongframework.bean.factory.Aware;
+import hongframework.beans.BeanException;
+import hongframework.beans.factory.Aware;
 
 /**
  * @Author: canhong

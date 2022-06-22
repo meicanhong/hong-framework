@@ -1,7 +1,7 @@
 package hongframework.context;
 
-import hongframework.bean.factory.ListableBeanFactory;
-import hongframework.bean.factory.config.HierarchicalBeanFactory;
+import hongframework.beans.factory.ListableBeanFactory;
+import hongframework.beans.factory.config.HierarchicalBeanFactory;
 import hongframework.core.io.ResourceLoader;
 
 /**

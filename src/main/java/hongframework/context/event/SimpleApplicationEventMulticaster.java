@@ -1,6 +1,6 @@
 package hongframework.context.event;
 
-import hongframework.bean.factory.BeanFactory;
+import hongframework.beans.factory.BeanFactory;
 import hongframework.context.ApplicationEvent;
 import hongframework.context.ApplicationListener;
 

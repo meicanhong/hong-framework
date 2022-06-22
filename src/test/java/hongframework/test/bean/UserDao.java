@@ -1,5 +1,7 @@
 package hongframework.test.bean;
 
+import hongframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -7,6 +9,7 @@ import java.util.Map;
  * @Author: canhong
  * @Date: 2022/6/6 16:00
  */
+@Component
 public class UserDao {
 
     private static Map<String, String> hashMap = new HashMap<>();

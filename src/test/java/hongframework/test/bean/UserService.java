@@ -1,50 +1,44 @@
 package hongframework.test.bean;
 
+import hongframework.beans.factory.annotation.Autowired;
+import hongframework.beans.factory.annotation.Value;
+import hongframework.stereotype.Component;
+
+
+import java.util.Random;
+
 /**
  * @Author: canhong
  * @Date: 2022/6/6 16:00
  */
-public class UserService {
+public class UserService implements IUserService {
 
-    private String uId;
-    private String company;
-    private String location;
-    private UserDao userDao;
+    private String token;
 
     public String queryUserInfo() {
-        return userDao.queryUserName(uId) + "," + company + "," + location;
+        try {
+            Thread.sleep(new Random(1).nextInt(100));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "小傅哥，100001，深圳，" + token;
     }
 
-    public String getuId() {
-        return uId;
+    public String register(String userName) {
+        try {
+            Thread.sleep(new Random(1).nextInt(100));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "注册用户：" + userName + " success！";
     }
 
-    public void setuId(String uId) {
-        this.uId = uId;
+    public String getToken() {
+        return token;
     }
 
-    public String getCompany() {
-        return company;
+    public void setToken(String token) {
+        this.token = token;
     }
-
-    public void setCompany(String company) {
-        this.company = company;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public UserDao getUserDao() {
-        return userDao;
-    }
-
-    public void setUserDao(UserDao userDao) {
-        this.userDao = userDao;
-    }
-
 }
+

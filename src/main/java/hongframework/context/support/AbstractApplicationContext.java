@@ -1,9 +1,9 @@
 package hongframework.context.support;
 
-import hongframework.bean.BeanException;
-import hongframework.bean.factory.ConfigurableListableBeanFactory;
-import hongframework.bean.factory.config.BeanFactoryPostProcessor;
-import hongframework.bean.factory.config.BeanPostProcessor;
+import hongframework.beans.BeanException;
+import hongframework.beans.factory.ConfigurableListableBeanFactory;
+import hongframework.beans.factory.config.BeanFactoryPostProcessor;
+import hongframework.beans.factory.config.BeanPostProcessor;
 import hongframework.context.ApplicationEvent;
 import hongframework.context.ApplicationListener;
 import hongframework.context.ConfigurableApplicationContext;
@@ -111,6 +111,11 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader i
     @Override
     public <T> T getBean(String name, Class<T> requiredType) throws BeanException {
         return getBeanFactory().getBean(name, requiredType);
+    }
+
+    @Override
+    public <T> T getBean(Class<T> requiredType) throws BeanException {
+        return getBeanFactory().getBean(requiredType);
     }
 
     @Override
