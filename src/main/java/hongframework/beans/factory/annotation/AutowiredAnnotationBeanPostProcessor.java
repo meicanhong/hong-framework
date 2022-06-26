@@ -63,6 +63,11 @@ public class AutowiredAnnotationBeanPostProcessor implements InstantiationAwareB
     }
 
     @Override
+    public Object getEarlyBeanReference(Object bean, String beanName) {
+        return InstantiationAwareBeanPostProcessor.super.getEarlyBeanReference(bean, beanName);
+    }
+
+    @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeanException {
         return null;
     }
@@ -75,6 +80,11 @@ public class AutowiredAnnotationBeanPostProcessor implements InstantiationAwareB
     @Override
     public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) throws BeanException {
         return null;
+    }
+
+    @Override
+    public boolean postProcessAfterInstantiation(Object bean, String beanName) throws BeanException {
+        return false;
     }
 
 }
